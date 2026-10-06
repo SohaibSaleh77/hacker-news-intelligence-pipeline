@@ -34,7 +34,7 @@ JINA_CFG = {
     "timeout": int(os.getenv("JINA_TIMEOUT", "30")),
 }
 
-# --- Extraction tunables (no hardcoded values in extract.py) ---
+# --- Extraction tunables  ---
 EXTRACT_CFG = {
     "request_timeout": int(os.getenv("EXTRACT_TIMEOUT", "10")),   # HN API timeout (s)
     "scrape_timeout": int(os.getenv("SCRAPE_TIMEOUT", "15")),     # fallback scrape timeout (s)
@@ -44,7 +44,7 @@ EXTRACT_CFG = {
 }
 
 LLM_CFG = {
-    # Switched from llama-3.3-70b-versatile (decommissioned 2026-08-16) to gpt-oss-120b
+    #  gpt-oss-120b
     "model": "openai/gpt-oss-120b",
     "tokens": 1500,
     "temp": 0.0,
